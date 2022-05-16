@@ -1,0 +1,20 @@
+@use "../partials/variables" as a;
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Karla", sans-serif;
+  background-color: a.$grayishblue;
+}

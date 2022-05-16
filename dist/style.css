@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Karla", sans-serif;
+  background-color: hsl(218deg, 22%, 67%);
+}
+
+.card {
+  min-height: 100vh;
+  margin: 1.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 48rem) {
+  .card {
+    margin: 0;
+  }
+}
+.card__items {
+  max-width: 19.5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+@media (min-width: 48rem) {
+  .card__items {
+    min-width: 39.6875rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+}
+.card__items h2,
+.card__items p {
+  color: hsl(204deg, 43%, 93%);
+}
+.card__items--firstsection {
+  padding: 2rem 1.5rem;
+  background-color: hsl(0deg, 0%, 100%);
+}
+@media (min-width: 48rem) {
+  .card__items--firstsection {
+    grid-column: 1/span 2;
+  }
+}
+.card__items--firstsection h2 {
+  color: hsl(179deg, 62%, 43%);
+}
+.card__items--firstsection h3 {
+  color: hsl(71deg, 73%, 54%);
+  padding-block: 1.75rem 1.5rem;
+}
+.card__items--firstsection p {
+  color: hsl(218deg, 22%, 67%);
+}
+.card__items--secondsection {
+  padding: 1.5rem;
+  background: hsl(179deg, 62%, 43%);
+}
+.card__items--secondsection .pricetag {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.card__items--secondsection .pricetag P:first-of-type {
+  font-size: 3rem;
+}
+.card__items--secondsection .pricetag P:last-of-type {
+  color: hsl(204deg, 43%, 93%);
+}
+.card__items--secondsection button {
+  margin-top: 2rem;
+  padding: 1.125rem 6.375rem;
+  border: none;
+  border-radius: 0.375rem;
+  background-color: hsl(71deg, 73%, 54%);
+  color: hsl(204deg, 43%, 93%);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.card__items--thirdsection {
+  padding: 1.75rem 1.5rem;
+  background: hsl(179deg, 47%, 52%);
+}
+.card__items--thirdsection h2 {
+  margin-bottom: 1.375rem;
+}
+.card__items--thirdsection ul > li {
+  list-style: none;
+  color: hsl(204deg, 43%, 93%);
+}
+
+/*# sourceMappingURL=style.css.map */
